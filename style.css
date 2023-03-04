@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, nav, section, footer{
+    background-color:  #030b20;
+    font-family: 'Poppins', sans-serif;
+}
+nav, main, footer{
+    padding: 20px 10px;
+}
+nav{
+    background-color: #15203B;
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    position: relative;
+    /* padding: 20px 80px; */
+    
+}
+.banner{
+    display: flex;
+}
+.banner h2{
+    color: yellow;
+}
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.nav-menu-link{
+    text-align: center;
+    padding: 12px;
+}
+a:hover{
+    background-color: #777;
+}
+.toggler{
+    position: absolute;
+    right: 20px;
+}
+.nav-links{
+    display: none;
+}
+.nav-links.active{
+    display: block;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#section-a, #section-b-, #section-c, #section-d-{
+    padding: 30px 0;
+} 
+/* <--------Section-A-----------------> */
+#section-A-main-container{
+    color: white;
+}
+#section-A-first-container{
+    padding: 30px 0;
+}
+#section-A-second-container{
+    font-size: smaller;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-row-gap: 20px;
+}
+#section-A-second-container img{
+    width: 20px;
+}
+
+.green{
+    color: green;
+    font-weight: bold;
+}
+.red{
+    color: red;
+    font-weight: bold;
+}
+.large{
+    font-size: xx-large;
+}
+
+#section-A-third-container{
+    padding: 30px 0;
+    text-align: center;
+}
+.button {
+    background-color: skyblue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+
+/* <--------Section-B-----------------> */
+#section-b{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+#section-b-first-container img{
+    width: 85vw;
+    margin: 0 20px;
+}
+#section-b-second-container h2{
+    font-size: xx-large;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+#section-b-second-container-points{
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+#section-b-second-container-points button {
+    background-color: #333;
+    color: rgb(228, 98, 23);
+    padding: 20px;
+    border: none;
+}
+
+/* <----------------Section-C------------> */
+
+#section-c-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 30px;
+}
+#section-c-first-container{
+    width: 90%;
+}
+#section-c-first-container h2{
+    padding-bottom: 25px;
+}
+.section-c-points{
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+}
+.section-c-points h4{
+    padding-bottom: 10px;
+}
+
+/* <-----------------Card - Section - C ------------> */
+.bitcoin-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-between;
+    /* padding-top: 10px; */
+    margin-top: 50px;
+    box-sizing: border-box;
+     transition: 400ms;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    background-color:  #15203B;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    flex-direction: column;
+}
+  
+.bitcoin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 18%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.hike{
+    color: green;
+    font-weight: bold;
+    
+}
+.bitcoin img{
+    width: 60px;
+ }
+
+  /* <--------Section-D-----------------> */
+#section-d{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#section-d-second-container-div{
+    display: flex;
+    flex-direction: row;
+}
+#section-d-first-container{
+    width: 100%;
+}
+#section-d-second-container{
+    width: 100%;
+}
+.footer_main-points{
+    margin: 0 12px;
+}
+.footer_main-point{
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 15px;
+}
+.footer_small{
+    font-size: small;
+    margin: -10px 0 -5px 0;
+}
+
+
+/* <----------Footer--------------> */
+footer{
+    text-align: center;
+     background-color: #15203B;
+      color: white;
+}
+
+
+@media screen and (min-width:769px) {
+    nav, main, footer{
+        padding: 20px 80px;
+    }
+    .nav-links{
+        display: block;
+    }
+    nav{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    ul{
+        flex-direction: row;
+        align-items: center;
+    }
+    .toggler{
+        display: none;
+    }
+
+    /* <----------Section-A------------> */
+    #section-A-second-container{
+        font-size: larger;
+    }
+    #section-A-second-container img{
+        width: 50px;
+    }
+
+
+    /* <--------Section-B-----------------> */
+    #section-b{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        color: white;
+    }
+    #section-b-first-container img{
+        width: 30vw;
+        margin: 0 20px;
+    }
+    #section-b-second-container h2{
+        font-size: xx-large;
+        font-weight: lighter;
+        padding-bottom: 20px;
+    }
+    #section-b-second-container-points{
+        display: flex;
+        gap: 30px;
+        margin: 20px 0;
+    }
+    #section-b-second-container-points button {
+        background-color: #333;
+        color: rgb(228, 98, 23);
+        padding: 20px;
+        border: none;
+    }
+
+    /* <--------------Section-C------------------> */
+    #section-c-container{
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+        /* padding: 50px; */
+    }
+    #section-c-first-container{
+        width: 50%;
+    }
+    #section-c-first-container h2{
+        padding-bottom: 25px;
+    }
+    .section-c-points{
+        display: flex;
+        gap: 15px;
+        padding: 10px 0;
+    }
+    .section-c-points h4{
+        padding-bottom: 10px;
+    }
+
+    
+     
+
+    /* <--------Section-D-----------------> */
+    #section-d, #section-d-second-container-div{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    #section-d-first-container{
+        width: 40%;
+    }
+    #section-d-second-container{
+        width: 60%;
+    }
+    .footer_main-points{
+        margin: 0 50px;
+    }
+    .footer_main-point{
+        color: white;
+        font-weight: bold;
+        font-size: larger;
+        margin-bottom: 15px;
+    }
+    .footer_small{
+        font-size: small;
+        margin: -10px 0 -5px 0;
+    }
+
+}
+@media screen and (max-width:769px) {
+    #search-bar{
+        display: none;
+    }
+}
+
+/* 769 - 1200 */
+@media only screen and (max-width: 1200px) and (min-width: 770px){
+    #section-b-second-container h2 br{
+        content: "";
+    }
+    #section-b-second-container h2 br::after{
+        content: " ";
+    }
+    #section-b-second-container p br{
+        content: "";
+    }
+    #section-b-second-container p br::after{
+        content: " ";
+    }
+    
+    #section-b-second-container h2{
+        /* font-size: small; */
+        font-weight: lighter;
+        padding-bottom: 20px;
+    }
+    #section-b-second-container-points{
+        margin: 1px;
+    }
+
+
+    #section-c-first-container{
+        width: 70vw;
+    }
+    #section-c-container {
+        gap: 10;
+        padding: 0;
+        padding-left: 0;
+    }
+    .bitcoin-card{
+        gap: 20px;
+    }
+    
+
+
+    @media only screen and (max-width: 1000px) and (min-width: 768px){
+        #section-b-second-container{
+            font-size: smaller;
+        }
+        #section-b-second-container h2{
+            font-size: small;
+            font-weight: lighter;
+            padding-bottom: 3px;
+        }
+    }
+
+    @media only screen and (max-width: 950px) and (min-width: 768px){
+        #section-c-container {
+            gap: 0;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) and (min-width: 769px){
+        #section-d, #section-d-second-container-div {
+            gap: 20;
+        }
+        .footer_main-points {
+            margin: 0 10px;
+        }
+    }
+    @media only screen and (max-width: 400px){
+        #section-A-main-container, #section-b, #section-c-container, #section-d{
+            padding-left: 0;
+            font-size: smaller;
+        } 
+    }
+    @media only screen and (max-width: 860px) and (min-width: 769px){
+        nav{
+            font-size: small;
+        }
+        .nav-menu-link {
+            padding: 5px;
+        }
+    }
+
+} 
